@@ -18,7 +18,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
  
  ### Unsigned Integer Data Types
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum &nbsp; &nbsp; | Maximum &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | BYTE         |            0 |          255 |        8 bit |            b |
 | WORD         |            0 |        65535 |       16 bit |            w |
@@ -42,5 +42,5 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| REAL          | -3.402823e+38 | 3.402823e+38  | 32 bit        | r             |
-| LREAL         | -1.79769e+308 | 1.79769e+308  | 64 bit        | lr            |
+| REAL          | -3.40e+38 | 3.40+38  | 32 bit        | r             |
+| LREAL         | -1.79e+308 | 1.79e+308  | 64 bit        | lr            |
