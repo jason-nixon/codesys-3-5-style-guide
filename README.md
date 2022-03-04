@@ -1,8 +1,6 @@
 # codesys-3-5-style-guide
 Colorful animal style guide for Codesys 3.5.  
 
-[Beckhoff TwinCAT naming guide](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/3146718603.html)
-
 # Identifiers for Variable and Instance Names
 
 ## Identifiers of POU and DUTs
@@ -36,7 +34,7 @@ On GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants
 
 ### Boolean Data Types
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | BIT           | FALSE         | TRUE          | 1 bit         |               |
 | BOOL          | FALSE         | TRUE          | 8 bit         | x             |
@@ -44,7 +42,7 @@ On GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants
 Note: While a BIT only uses 1 bit of memory space, it is less efficient to access than a BOOL because of how bits are consolidated in the memory of the device.  It is recommended that BITs are only used for specific purposes and that BOOL is used for a general boolean value.  
  
 ### Unsigned Integer Data Types
- | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+ | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | BYTE         | 0              | 255           | 8 bit         |            b |
 | WORD         | 0              | 65535         | 16 bit        |            w |
@@ -57,7 +55,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 
 ### Signed Integer Data Types
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | SINT          | -128          | 127           | 8 bit         | si            |
 | INT           | -32768        | 32767         | 16 bit        | i             |
@@ -68,7 +66,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 
 These psuedo data types are converted to a platform-compliant data type by the compiler, depending on the target system.  
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 64-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 32-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 64-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 32-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- |
 | UXINT         | ULINT         | UDINT         | uxi           |
 | XINT          | LINT          | DINT          | uxi           |
@@ -76,7 +74,7 @@ These psuedo data types are converted to a platform-compliant data type by the c
 
 ### Floating Point Data Types
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | REAL          | -3.40e+38     | 3.40+38       | 32 bit        | r             |
 | LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
@@ -101,4 +99,8 @@ Because these functions are used frequently and their funcitonality is simple, t
 | F_TRIG        | ft            | 
 | TON           | ton           | 
 | TOFF          | tof           |
+
+# Sources
+
+[Beckhoff TwinCAT naming guide](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/3146718603.html)
 
