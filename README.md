@@ -5,7 +5,7 @@ Colorful animal style guide for Codesys 3.5.
 
 # Basic Types
 
-## Boolean
+## Boolean Data Types
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -43,3 +43,14 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | REAL          | -3.40e+38     | 3.40+38       | 32 bit        | r             |
 | LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
+
+# Special Function Types
+
+Because these functions are used frequently and their funcitonality is simple, these functions are considered special and have reserved prefixes to reduce name length.  
+
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+| ------------- | ------------- | 
+| R_TRIG        | rt            |
+| F_TRIG        | ft            | 
+| TON           | ton           | 
+| TOFF          | tof           |
