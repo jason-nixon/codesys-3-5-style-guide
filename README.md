@@ -7,21 +7,22 @@ Colorful animal style guide for Codesys 3.5.
 
 # Identifiers of POU and DUTs
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| FUNCTION_BLOCK | FB_ |
-| ACTION | |
-| METHOD | |
-| PROPERTY | Type Prefix* |
-| PROGRAM | P_ |
-| FUNCTION | F_ |
-| STRCUT | ST_ |
-| ENUMERATION | E_ |
-| TYPE | T_ |
-| UNION | U_ |
-| GVL | GVL_ |
-| GCL | GCL_ |
-| GVCL | GVCL_ |
+| Object | Prefix | Descirption | Example. 
+| ------------- | ------------- | ------------- | ------------- | 
+| FUNCTION_BLOCK | FB_ | Function block
+| ACTION | | Action |
+| METHOD | | Method |
+| PROPERTY | Type Prefix* | Property |
+| PROGRAM | P_ | Program | 
+| FUNCTION | F_ | Function | 
+| STRCUT | ST_ | Structure | 
+| ENUMERATION | E_ | Enumeration type | 
+| TYPE | T_ | Alias type | 
+| UNION | U_ | Union | 
+| INTERFACE | I_ | Interface
+| GVL | GVL_ | Global variable list |  
+| GCL | GCL_ | Global constant list | 
+| GVCL | GVCL_ | Global variable and constant list | 
 
 ## Parameter Naming
 
