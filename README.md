@@ -39,7 +39,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 
 ## System Specific Type Conversions
 
-These psuedo data types are converted to a platform-compliant data type, depending on the target system.  
+These psuedo data types are converted to a platform-compliant data type by the compiler, depending on the target system.  
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 64-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 32-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- |
@@ -54,6 +54,16 @@ These psuedo data types are converted to a platform-compliant data type, dependi
 | REAL          | -3.40e+38     | 3.40+38       | 32 bit        | r             |
 | LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
 
+## Naming Conventions for Types
+
+## Naming Variables
+
+Variables are to be named using camel case.  For example, a boolean variable would be written as xThisVariable.  The prefix x denotes from the above prefix guide that it is a boolean variable.  
+
+## Naming Constants
+
+Constants, unlike variables, are named using a capitalized snake case, with the exception of the prefix, which will be lower case.  For example, a constant to convert radians to degrees would be named lrRADIANS_TO_DEGREES.  
+
 # Special Function Types
 
 Because these functions are used frequently and their funcitonality is simple, these functions are considered special and have reserved prefixes to reduce name length.  
@@ -64,3 +74,4 @@ Because these functions are used frequently and their funcitonality is simple, t
 | F_TRIG        | ft            | 
 | TON           | ton           | 
 | TOFF          | tof           |
+
