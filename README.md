@@ -37,6 +37,16 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 | DINT          | -2147483648   | 2147483647    | 32 bit        | di            |
 | LINT          | -2^63         | 2^63          | 64 bit        | li            |
 
+## System Specific Type Conversions
+
+These psuedo data types are converted to a platform-compliant data type, depending on the target system.  
+
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 64-bit &nbsp; &nbsp; &nbsp; &nbsp; | 32-bit &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+| ------------- | ------------- | ------------- | ------------- |
+| UXINT         | ULINT         | UDINT         | uxi           |
+| XINT          | LINT          | DINT          | uxi           |
+| XWORD         | LWORD         | DWORD         | xw            |
+
 ## Floating Point Data Types
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
