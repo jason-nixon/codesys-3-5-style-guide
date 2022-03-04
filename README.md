@@ -58,11 +58,11 @@ These psuedo data types are converted to a platform-compliant data type by the c
 
 ## Naming Variables
 
-Variables are to be named using camel case.  For example, a boolean variable would be written as xThisVariable.  The prefix x denotes from the above prefix guide that it is a boolean variable.  
+Variables are to be named using camel case.  For example, a boolean variable would be written as xThisBoolean.  The prefix x denotes from the above prefix guide that this variable is type BOOL.  
 
 ## Naming Constants
 
-Constants, unlike variables, are named using a capitalized snake case, with the exception of the prefix, which will be lower case.  For example, a constant to convert radians to degrees would be named lrRADIANS_TO_DEGREES.  
+Constants, unlike variables, are named using a capitalized snake case, with the exception of the prefix, which will be lower case.  For example, a constant to convert radians to degrees would be named lrRADIANS_TO_DEGREES.  The prefix lr denotes from the prefix guide that this constant is type LREAL.  
 
 # Special Function Types
 
