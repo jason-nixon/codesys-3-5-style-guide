@@ -5,6 +5,15 @@ Colorful animal style guide for Codesys 3.5.
 
 # Basic Types
 
+## Boolean
+
+|         Type |      Minimum |      Maximum |       Memory |       prefix |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| BIT          |        FALSE |         TRUE |        1 bit |              |
+| BOOL         |        FALSE |         TRUE |        8 bit |            x |
+
+Note: A BIT element requires 1 bit of memory space, and you can use it to address individual bits of a structure or function block using its name. BIT elements, which are declared sequentially, are consolidated to bytes. This allows you to optimize memory usage compared to BOOL types, which each occupy at least 8 bits. However, bit access takes significantly longer. Therefore, you should only use the data type BIT if you want to define the data in a specified format.
+
 ## Unsigned Integer Data Types
 
 |         Type |      Minimum |      Maximum |       Memory |       prefix |
