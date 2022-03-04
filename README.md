@@ -7,7 +7,7 @@ Colorful animal style guide for Codesys 3.5.
 
 ## Boolean
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum &nbsp; &nbsp; | Maximum &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | BIT           | FALSE         | TRUE          | 1 bit         |               |
 | BOOL          | FALSE         | TRUE          | 8 bit         | x             |
@@ -19,19 +19,19 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
  ### Unsigned Integer Data Types
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum &nbsp; &nbsp; | Maximum &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| BYTE         |            0 |          255 |        8 bit |            b |
-| WORD         |            0 |        65535 |       16 bit |            w |
-| DWORD        |            0 |   4294967295 |       32 bit |           dw |
-| LWORD        |            0 |       2^64-1 |       64 bit |           lw |
-| USINT        |            0 |            0 |        8 bit |          usi |
-| UINT         |            0 |        65535 |       16 bit |           ui |
-| UDINT        |            0 |       2^64-1 |       32 bit |          udi |
-| ULINT        |            0 |       2^64-1 |       64 bit |          uli |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| BYTE         | 0              | 255           | 8 bit         |            b |
+| WORD         | 0              | 65535         | 16 bit        |            w |
+| DWORD        | 0              | 4294967295    | 32 bit        |           dw |
+| LWORD        | 0              | 2^64-1        | 64 bit        |           lw |
+| USINT        | 0              | 255           | 8 bit         |          usi |
+| UINT         | 0              | 65535         | 16 bit        |           ui |
+| UDINT        | 0              | 2^64-1        | 32 bit        |          udi |
+| ULINT        | 0              | 2^64-1        | 64 bit        |          uli |
 
 ### Signed Integer Data Types
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum &nbsp; &nbsp; | Maximum &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | SINT          | -128          | 127           | 8 bit         | si            |
 | INT           | -32768        | 32767         | 16 bit        | i             |
@@ -40,7 +40,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 
 ## Floating Point Data Types
 
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum &nbsp; &nbsp; | Maximum &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| REAL          | -3.40e+38 | 3.40+38  | 32 bit        | r             |
-| LREAL         | -1.79e+308 | 1.79e+308  | 64 bit        | lr            |
+| REAL          | -3.40e+38     | 3.40+38       | 32 bit        | r             |
+| LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
