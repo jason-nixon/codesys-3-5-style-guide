@@ -23,7 +23,9 @@ Colorful animal style guide for Codesys 3.5.
 | GCL | GCL_ |
 | GVCL | GVCL_ |
 
-Note on GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants variables and constants into a single Global Variable and Constant (GVCL) list instead of seperating these into a distinct Global Variable List (GVL) and a Global Constant List (GCL).  
+On parameters, parameters should be named after their data type.  For example, a boolean property would be name xThisProperty.  
+
+On GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants variables and constants into a single Global Variable and Constant (GVCL) list instead of seperating these into distinct Global Variable List (GVL) and a Global Constant List (GCL) files.  
 
 ## Variables of Elementary Data Types
 
