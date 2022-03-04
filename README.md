@@ -12,7 +12,7 @@ Colorful animal style guide for Codesys 3.5.
 | FUNCTION_BLOCK | FB_ |
 | ACTION | |
 | METHOD | |
-| PROPERTY | *** |
+| PROPERTY | Type Prefix* |
 | PROGRAM | P_ |
 | FUNCTION | F_ |
 | STRCUT | ST_ |
@@ -23,7 +23,11 @@ Colorful animal style guide for Codesys 3.5.
 | GCL | GCL_ |
 | GVCL | GVCL_ |
 
-On parameters, parameters should be named after their data type.  For example, a boolean property would be name xThisProperty.  
+## Parameter Naming
+
+Parameters should be named after their data type.  For example, a boolean property would be name xThisProperty.  
+
+## Global Variables and Constants
 
 On GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants variables and constants into a single **G**lobal **V**ariable and **C**onstant **L**ist (GVCL) instead of seperating these into distinct **G**lobal **V**ariable **L**ist (GVL) and a **G**lobal **C**onstant **L**ist (GCL) files.  
 
