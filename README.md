@@ -5,8 +5,7 @@ Colorful animal style guide for Codesys 3.5.
 
 # Basic Types
 
-## Integer data types
-
+## Unsigned Integer Data Types
 
 |         Type |      Minimum |      Maximum |       Memory |       prefix |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
@@ -14,14 +13,17 @@ Colorful animal style guide for Codesys 3.5.
 | WORD         |            0 |        65535 |       16 bit |            w |
 | DWORD        |            0 |   4294967295 |       32 bit |           dw |
 | LWORD        |            0 |       2^64-1 |       64 bit |           lw |
-| SINT         |         -127 |          127 |        8 bit |           si |
 | USINT        |            0 |            0 |        8 bit |          usi |
-| INT          |              |              |       16 bit |            i |
-| UINT         |              |              |       16 bit |           ui |
-| DINT         |              |              |       32 bit |           di |
+| UINT         |            0 |        65535 |       16 bit |           ui |
 | UDINT        |            0 |       2^64-1 |       32 bit |          udi |
-| LINT         |        -2^63 |         2^63 |       64 bit |           li |
 | ULINT        |            0 |       2^64-1 |       64 bit |          uli |
 
+## Signed Integer Data Types
 
+|         Type |      Minimum |      Maximum |       Memory |       prefix |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| SINT         |         -128 |          127 |        8 bit |           si |
+| INT          |       -32768 |        32767 |       16 bit |            i |
+| DINT         |  -2147483648 |   2147483647 |       32 bit |           di |
+| LINT         |        -2^63 |         2^63 |       64 bit |           li |
 
