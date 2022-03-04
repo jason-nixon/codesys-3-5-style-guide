@@ -8,8 +8,9 @@ Colorful animal style guide for Codesys 3.5.
 ## Integer data types
 
 
-| type | min | max | Memory | prefix |
-| BYTE | 0 | 255 | 8 bit | b |
+|         Type |      Minimum |      Maximum |       Memory |       prefix |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| BYTE |   0 | 255 | 8 bit | b |
 | WORD | 0 | 65535 | 16 bit | w |
 | DWORD | 0 | 4294967295 | 32 bit | dw |
 | LWORD | 0 | 2^64-1 | 64 bit | lw |
