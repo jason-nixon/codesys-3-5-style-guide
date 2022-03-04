@@ -9,19 +9,21 @@ Colorful animal style guide for Codesys 3.5.
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| FUNCTION_BLOCK |
-| ACTION |
-| METHOD | 
-| PROPERTY | 
-| PROGRAM | 
-| FUNCTION | 
-| STRCUT | 
-| ENUMERATION |
-| TYPE | 
-| UNION |
-| GVL | 
-| GCL | 
-| GVCL | 
+| FUNCTION_BLOCK | FB_ |
+| ACTION | |
+| METHOD | |
+| PROPERTY | *** |
+| PROGRAM | P_ |
+| FUNCTION | F_ |
+| STRCUT | ST_ |
+| ENUMERATION | E_ |
+| TYPE | T_ |
+| UNION | U_ |
+| GVL | GVL_ |
+| GCL | GCL_ |
+| GVCL | GVCL_ |
+
+Note on GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants variables and constants into a single Global Variable and Constant (GVCL) list instead of seperating these into a distinct Global Variable List (GVL) and a Global Constant List (GCL).  
 
 ## Variables of Elementary Data Types
 
