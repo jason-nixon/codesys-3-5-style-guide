@@ -5,7 +5,7 @@ Colorful animal style guide for Codesys 3.5.
 
 # Identifiers for Variable and Instance Names
 
-# Identifiers of POU and DUTs
+## Identifiers of POU and DUTs
 
 | Object | Prefix | Descirption | Example. 
 | ------------- | ------------- | ------------- | ------------- | 
@@ -24,11 +24,11 @@ Colorful animal style guide for Codesys 3.5.
 | GCL | GCL_ | Global constant list | GCL_DataConstants | 
 | GVCL | GVCL_ | Global variable and constant list | GVCL_Data |
 
-## Parameter Naming
+### Parameter Naming
 
 Parameters should be named according to their data type.  For example, a unsigned double integer property would be name udiThisProperty.   
 
-## Global Variables and Constants
+### Global Variables and Constants
 
 On GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants variables and constants into a single **G**lobal **V**ariable and **C**onstant **L**ist (GVCL) instead of seperating these into distinct **G**lobal **V**ariable **L**ist (GVL) and a **G**lobal **C**onstant **L**ist (GCL) files.  
 
