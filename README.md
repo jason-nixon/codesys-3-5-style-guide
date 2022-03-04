@@ -7,6 +7,22 @@ Colorful animal style guide for Codesys 3.5.
 
 # Identifiers of POU and DUTs
 
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| FUNCTION_BLOCK |
+| ACTION |
+| METHOD | 
+| PROPERTY | 
+| PROGRAM | 
+| FUNCTION | 
+| STRCUT | 
+| ENUMERATION |
+| TYPE | 
+| UNION |
+| GVL | 
+| GCL | 
+| GVCL | 
+
 ## Variables of Elementary Data Types
 
 ### Boolean Data Types
@@ -39,7 +55,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 | DINT          | -2147483648   | 2147483647    | 32 bit        | di            |
 | LINT          | -2^63         | 2^63          | 64 bit        | li            |
 
-### System Specific Type Conversion
+### System Specific Integer Type Conversion
 
 These psuedo data types are converted to a platform-compliant data type by the compiler, depending on the target system.  
 
