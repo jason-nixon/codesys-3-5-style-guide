@@ -5,6 +5,8 @@ Colorful animal style guide for Codesys 3.5.
 
 # Identifiers for Variable and Instance Names
 
+# Identifiers of POU and DUTs
+
 ## Variables of Elementary Data Types
 
 ### Boolean Data Types
@@ -16,9 +18,7 @@ Colorful animal style guide for Codesys 3.5.
 
 Note: While a BIT only uses 1 bit of memory space, it is less efficient to access than a BOOL because of how bits are consolidated in the memory of the device.  It is recommended that BITs are only used for specific purposes and that BOOL is used for a general boolean value.  
  
- ### Integer Data Types
- 
- #### Unsigned Integer Data Types
+### Unsigned Integer Data Types
  | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | BYTE         | 0              | 255           | 8 bit         |            b |
@@ -30,7 +30,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 | UDINT        | 0              | 2^64-1        | 32 bit        |          udi |
 | ULINT        | 0              | 2^64-1        | 64 bit        |          uli |
 
-#### Signed Integer Data Types
+### Signed Integer Data Types
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -39,7 +39,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 | DINT          | -2147483648   | 2147483647    | 32 bit        | di            |
 | LINT          | -2^63         | 2^63          | 64 bit        | li            |
 
-### System Specific Type Conversions
+### System Specific Type Conversion
 
 These psuedo data types are converted to a platform-compliant data type by the compiler, depending on the target system.  
 
@@ -49,7 +49,7 @@ These psuedo data types are converted to a platform-compliant data type by the c
 | XINT          | LINT          | DINT          | uxi           |
 | XWORD         | LWORD         | DWORD         | xw            |
 
-## Floating Point Data Types
+### Floating Point Data Types
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
