@@ -9,24 +9,24 @@ Colorful animal style guide for Codesys 3.5.
 
 | Object | Prefix | Descirption | Example. 
 | ------------- | ------------- | ------------- | ------------- | 
-| FUNCTION_BLOCK | FB_ | Function block
-| ACTION | | Action |
-| METHOD | | Method |
-| PROPERTY | Type Prefix* | Property |
-| PROGRAM | P_ | Program | 
-| FUNCTION | F_ | Function | 
-| STRCUT | ST_ | Structure | 
-| ENUMERATION | E_ | Enumeration type | 
+| FUNCTION_BLOCK | FB_ | Function block | FB_WriteData |
+| ACTION | | Action | Write Data | 
+| METHOD | | Method | Clear Data | 
+| PROPERTY | Type Prefix* | Property | xIsDataAvailable |
+| PROGRAM | P_ | Program | P_HandleData | 
+| FUNCTION | F_ | Function | F_ManipulateData | 
+| STRCUT | ST_ | Structure | ST_Data | 
+| ENUMERATION | E_ | Enumeration type | E_DataType |  
 | TYPE | T_ | Alias type | 
 | UNION | U_ | Union | 
-| INTERFACE | I_ | Interface
-| GVL | GVL_ | Global variable list |  
-| GCL | GCL_ | Global constant list | 
-| GVCL | GVCL_ | Global variable and constant list | 
+| INTERFACE | I_ | Interface | I_DataInterface |
+| GVL | GVL_ | Global variable list | GVL_Data | 
+| GCL | GCL_ | Global constant list | GCL_DataConstants | 
+| GVCL | GVCL_ | Global variable and constant list | GVCL_Data |
 
 ## Parameter Naming
 
-Parameters should be named after their data type.  For example, a boolean property would be name xThisProperty.  
+Parameters should be named according to their data type.  For example, a unsigned double integer property would be name udiThisProperty.   
 
 ## Global Variables and Constants
 
