@@ -18,7 +18,7 @@ Note: A BIT element requires 1 bit of memory space, and you can use it to addres
  
  ### Unsigned Integer Data Types
 
-|         Type |      Minimum |      Maximum |       Memory |       prefix |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | BYTE         |            0 |          255 |        8 bit |            b |
 | WORD         |            0 |        65535 |       16 bit |            w |
@@ -31,7 +31,7 @@ Note: A BIT element requires 1 bit of memory space, and you can use it to addres
 
 ### Signed Integer Data Types
 
-| Type          | Minimum       | Maximum       | Memory        | Prefix        |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | SINT          | -128          | 127           | 8 bit         | si            |
 | INT           | -32768        | 32767         | 16 bit        | i             |
@@ -40,7 +40,7 @@ Note: A BIT element requires 1 bit of memory space, and you can use it to addres
 
 ## Floating Point Data Types
 
-| Type          | Minimum       | Maximum       | Memory        | Prefix        |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Minimum       | Maximum       | Memory        | Prefix        |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | REAL          | -3.402823e+38 | 3.402823e+38  | 32 bit        | r             |
 | LREAL         | -1.79769e+308 | 1.79769e+308  | 64 bit        | lr            |
