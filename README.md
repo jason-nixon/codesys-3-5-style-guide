@@ -5,7 +5,7 @@ Colorful animal style guide for Codesys 3.5.
 
 ## Identifiers of POU and DUTs
 
-| Object | Prefix | Descirption | Example. 
+| Object | Prefix | Description | Example. 
 | ------------- | ------------- | ------------- | ------------- | 
 | FUNCTION_BLOCK | FB_ | Function block | FB_WriteData |
 | ACTION | | Action | Write Data | 
@@ -64,7 +64,7 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 
 ### System Specific Integer Type Conversion
 
-These psuedo data types are converted to a platform-compliant data type by the compiler, depending on the target system.  
+These pseudo data types are converted to a platform-compliant data type by the compiler, depending on the target system.  
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 64-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 32-bit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |
 | ------------- | ------------- | ------------- | ------------- |
@@ -91,7 +91,7 @@ Constants, unlike variables, are named using a capitalized snake case, with the 
 
 # Special Function Types
 
-Because these functions are used frequently and their funcitonality is simple, these functions are considered special and have reserved prefixes to reduce name length.  
+Because these functions are used frequently and their functionality is simple, these functions are considered special and have reserved prefixes to reduce name length.  
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | 
