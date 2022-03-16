@@ -74,14 +74,14 @@ These pseudo data types are converted to a platform-compliant data type by the c
 
 ### Instances of Objects, and User-Defined Data Types:
 
-| Type | Description | Prefix |
+| Type | Declaration | Instance |
 | ------------- | ------------- | ------------- |
-| FUNCTION_BLOCK | Instance of a function block | fb |
-| STRUCT         | Instance of a structure | st |
-| ENUM           | Instance of an enumeration | e | 
-| TYPE (Alias)   | Instnce of an alias type | Alias type | 
-| INTERFACE      | Instance of an interface | p |
-| UNION          | Instance of a union | u |
+| FUNCTION_BLOCK | FB_ | fb |
+| STRUCT         | ST_ | st |
+| ENUM           | E_ | e | 
+| TYPE (Alias)   | T_ | Alias type | 
+| INTERFACE      | I_ | i |
+| UNION          | U_ | u |
 
 ### Floating Point Data Types
 
