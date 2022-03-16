@@ -76,7 +76,7 @@ These pseudo data types are converted to a platform-compliant data type by the c
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| REAL          | -3.40e+38     | 3.40+38       | 32 bit        | r             |
+| REAL          | -3.40e+38     | 3.40e+38       | 32 bit        | r             |
 | LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
 
 ## Naming Conventions for Types
