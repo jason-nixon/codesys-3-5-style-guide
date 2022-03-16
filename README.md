@@ -152,3 +152,4 @@ Because these functions are used frequently and their functionality is simple, t
 
 [Beckhoff TwinCAT naming guide](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/3146718603.html)
 
+[e!COCKPIT manual](https://usermanual.wiki/Document/ecockpit20manual.952137147.pdf) See section 4.5.  
