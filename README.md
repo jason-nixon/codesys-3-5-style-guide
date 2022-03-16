@@ -72,6 +72,30 @@ These pseudo data types are converted to a platform-compliant data type by the c
 | XINT          | LINT          | DINT          | uxi           |
 | XWORD         | LWORD         | DWORD         | xw            |
 
+### Floating Point Data Types
+
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| REAL          | -3.40e+38     | 3.40e+38      | 32 bit        | r             |
+| LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
+
+### String Types
+
+| Type | Description | Prefix |
+| ------------- | ------------- | ------------- |
+| STRING | wide string (unicode) | s |
+| WSTRING | wide string (unicode) | ws |
+
+### Date, Time Types
+
+| Type | Description | Prefix |
+| ------------- | ------------- | ------------- |
+| TIME | time | t |
+| LTIME | time | lt |
+| TIME_OF_DAY | time of day | td |
+| DATE | date | d |
+| DATETIME | date and time | dt |
+
 ### Instances of Objects, and User-Defined Data Types:
 
 | Type | Declaration | Instance |
@@ -82,13 +106,6 @@ These pseudo data types are converted to a platform-compliant data type by the c
 | TYPE (Alias)   | T_ | Alias type | 
 | INTERFACE      | I_ | i |
 | UNION          | U_ | u |
-
-### Floating Point Data Types
-
-| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| REAL          | -3.40e+38     | 3.40e+38      | 32 bit        | r             |
-| LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
 
 ## Naming Conventions for Types
 
