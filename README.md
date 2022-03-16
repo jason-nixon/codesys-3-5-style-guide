@@ -88,8 +88,7 @@ These pseudo data types are converted to a platform-compliant data type by the c
 
 ### Date, Time Types
 
-| Type | Description | Prefix |
-| ------------- | ------------- | ------------- |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Description &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
 | TIME | time | t |
 | LTIME | time | lt |
 | TIME_OF_DAY | time of day | td |
@@ -98,7 +97,7 @@ These pseudo data types are converted to a platform-compliant data type by the c
 
 ### Instances of Objects, and User-Defined Data Types:
 
-| Type | Declaration | Instance |
+| Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Description &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- |
 | FUNCTION_BLOCK | FB_ | fb |
 | STRUCT         | ST_ | st |
