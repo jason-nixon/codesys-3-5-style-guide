@@ -1,9 +1,9 @@
 # codesys-3-5-style-guide
 Colorful animal style guide for Codesys 3.5.  
 
-# Identifiers for Variable and Instance Names
+# Naming Conventions
 
-## Identifiers of POU and DUTs
+## Declarations
 
 | Object | Prefix | Description | Example |
 | ------------- | ------------- | ------------- | ------------- | 
@@ -22,13 +22,9 @@ Colorful animal style guide for Codesys 3.5.
 | GCL | GCL_ | Global constant list | GCL_DataConstants | 
 | GVCL | GVCL_ | Global variable and constant list | GVCL_Data |
 
-### Parameter Naming
+Properties should be named according to their data type.  For example, a unsigned double integer property would be name udiThisProperty.   
 
-Parameters should be named according to their data type.  For example, a unsigned double integer property would be name udiThisProperty.   
-
-### Global Variables and Constants
-
-On GVL, GCL, and GVCLs.  For readability, it is recommended to combine revelants variables and constants into a single **G**lobal **V**ariable and **C**onstant **L**ist (GVCL) instead of seperating these into distinct **G**lobal **V**ariable **L**ist (GVL) and a **G**lobal **C**onstant **L**ist (GCL) files.  
+For readability, it is recommended to combine revelant variables and constants into a single **G**lobal **V**ariable and **C**onstant **L**ist (GVCL) instead of seperating these into distinct **G**lobal **V**ariable **L**ist (GVL) and a **G**lobal **C**onstant **L**ist (GCL) files.  
 
 ## Variables of Elementary Data Types
 
@@ -105,46 +101,43 @@ The WSTRING datatype is interpreted in Unicode format.  For this datatype, each 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Description &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- |
 | FUNCTION_BLOCK | FB_ | fb |
-| STRUCT         | ST_ | st |
-| ENUM           | E_ | e | 
-| TYPE (Alias)   | T_ | Alias type | 
-| INTERFACE      | I_ | ip |
-| UNION          | U_ | u |
+| STRUCT | ST_ | st |
+| ENUM | E_ | e | 
+| TYPE (Alias) | T_ | Alias type | 
+| INTERFACE | I_ | ip |
+| UNION | U_ | u |
 
-## Naming Conventions for Types
+### Naming Variables
 
-## Naming Variables
+Variables are to be named using camel case.  For example, a boolean variable would be written as xThisBoolean.  From the above guide, prefix x denotes that this variable is of the BOOl datatype.  
 
-Variables are to be named using camel case.  For example, a boolean variable would be written as xThisBoolean.  The prefix x denotes from the above prefix guide that this variable is type BOOL.  
+### Naming Constants
 
-## Naming Constants
-
-Constants, unlike variables, are named using a capitalized snake case, with the exception of the prefix, which will be lower case.  For example, a constant to convert radians to degrees would be named lrRADIANS_TO_DEGREES.  The prefix lr denotes from the prefix guide that this constant is type LREAL.  
+Constatns are to be named using a capitalized snake case, with the exception of the prefix, which will be lower case.  For example, a constant pre-factor to convert radians to degrees would be named lrRADIANS_TO_DEGREES.  From the instance naming guide, the prefix lr denotes from the prefix guide that this constant is of the LREAL datatype.  
 
 ## Legacy Naming
 
 | Type | Old | New |
 | --- | --- | --- |
-| SINT | n | si |
-| USINT | n | usi | 
-| INT | n | i |
-| UINT | n | ui |
-| DINT | n | di |
-| UDINT | n | udi |
-| LINT | n | li |
-| ULINT | n | uli |
-| BYTE | n | b |
-| WORD | n | w |
-| DWORD | n | dw |
-| LWORD | n | lw |
-| XINT | n | xi |
-| UXINT | n | uxi |
-| XWORD | n | xw |
-| LREAL | f | lr |
-| REAL | f | r |
 | BOOL | b | x |
+| BYTE | n | b |
+| DINT | n | di |
+| DWORD | n | dw |
+| INT | n | i |
+| LINT | n | li
+| LREAL | f | lr | 
+| LWORD | n | lw |
+| REAL | f | r |
+| UDINT | n | udi |
+| UINT | n | ui |
+| USINT | n | usi | 
+| ULINT | n | uli |
+| UXINT | n | uxi |
+| WORD | n | w |
+| XINT | n | xi |
+| XWORD | n | xw |
  
-# Special Function Types
+## Special Function Types
 
 Because these functions are used frequently and their functionality is simple, these functions are considered special and have reserved prefixes to reduce name length.  
 
