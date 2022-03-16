@@ -5,11 +5,11 @@ Colorful animal style guide for Codesys 3.5.
 
 ## Identifiers of POU and DUTs
 
-| Object | Prefix | Description | Example. |
+| Object | Prefix | Description | Example |
 | ------------- | ------------- | ------------- | ------------- | 
 | FUNCTION_BLOCK | FB_ | Function block | FB_WriteData |
-| ACTION | | Action | Write Data | 
-| METHOD | | Method | Clear Data | 
+| ACTION | | Action | WriteData | 
+| METHOD | | Method | ClearData | 
 | PROPERTY | Type Prefix* | Property | xIsDataAvailable |
 | PROGRAM | P_ | Program | P_HandleData | 
 | FUNCTION | F_ | Function | F_ManipulateData | 
@@ -108,7 +108,7 @@ The WSTRING datatype is interpreted in Unicode format.  For this datatype, each 
 | STRUCT         | ST_ | st |
 | ENUM           | E_ | e | 
 | TYPE (Alias)   | T_ | Alias type | 
-| INTERFACE      | I_ | i |
+| INTERFACE      | I_ | ip |
 | UNION          | U_ | u |
 
 ## Naming Conventions for Types
@@ -121,6 +121,29 @@ Variables are to be named using camel case.  For example, a boolean variable wou
 
 Constants, unlike variables, are named using a capitalized snake case, with the exception of the prefix, which will be lower case.  For example, a constant to convert radians to degrees would be named lrRADIANS_TO_DEGREES.  The prefix lr denotes from the prefix guide that this constant is type LREAL.  
 
+## Legacy Naming
+
+| Type | Old | New |
+| --- | --- | --- |
+| SINT | n | si |
+| USINT | n | usi | 
+| INT | n | i |
+| UINT | n | ui |
+| DINT | n | di |
+| UDINT | n | udi |
+| LINT | n | li |
+| ULINT | n | uli |
+| BYTE | n | b |
+| WORD | n | w |
+| DWORD | n | dw |
+| LWORD | n | lw |
+| XINT | n | xi |
+| UXINT | n | uxi |
+| XWORD | n | xw |
+| LREAL | f | lr |
+| REAL | f | r |
+| BOOL | b | x |
+ 
 # Special Function Types
 
 Because these functions are used frequently and their functionality is simple, these functions are considered special and have reserved prefixes to reduce name length.  
