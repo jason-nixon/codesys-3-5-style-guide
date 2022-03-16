@@ -93,6 +93,7 @@ The WSTRING datatype is interpreted in Unicode format.  For this datatype, each 
 ### Date, Time Types
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Description &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; |
+| ------------- | ------------- | ------------- | 
 | TIME | time | t |
 | LTIME | time | lt |
 | TIME_OF_DAY | time of day | td |
