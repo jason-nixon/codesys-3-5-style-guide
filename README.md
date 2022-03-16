@@ -81,10 +81,16 @@ These pseudo data types are converted to a platform-compliant data type by the c
 
 ### String Types
 
-| Type | Description | Prefix |
-| ------------- | ------------- | ------------- |
-| STRING | wide string (unicode) | s |
-| WSTRING | wide string (unicode) | ws |
+| Type | Description | Prefix | Interpretation |
+| ------------- | ------------- | ------------- | ------------- |
+| STRING | string | s | ASCII |
+| WSTRING | wide string | ws | Unicode |
+
+Note 1: The data type WSTRING is interpreted in the Unicode format.  A WSTRING of length 10 contains up to 10 WORDs.  However, the number of displayed characters does not neccisarily correspond to the length of the WSTRING because the some Unicode characters require multiple WORDs. The data type requires 1 WORD of memory per character plus 1 WORD of extra memory. 
+
+For the STRING datatype, each character requires 1 byte, and an additoinal string terminating byte.  For example, if a STRING(50) is declared, this will occupy 51 bytes of memory. Each STRING is automatically terminated with a null character.  
+
+For the WSTRING datatype, each character requires at least 1, although possible more, WORDs.  Paralleling the STRING datatype, each WSTRING uses one additional WORD of memory.  A WSTRING is terminated with 0.  
 
 ### Date, Time Types
 
