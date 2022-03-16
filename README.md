@@ -5,7 +5,7 @@ Colorful animal style guide for Codesys 3.5.
 
 ## Identifiers of POU and DUTs
 
-| Object | Prefix | Description | Example. 
+| Object | Prefix | Description | Example. |
 | ------------- | ------------- | ------------- | ------------- | 
 | FUNCTION_BLOCK | FB_ | Function block | FB_WriteData |
 | ACTION | | Action | Write Data | 
@@ -44,14 +44,14 @@ Note: While a BIT only uses 1 bit of memory space, it is less efficient to acces
 ### Unsigned Integer Data Types
  | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| BYTE         | 0              | 255           | 8 bit         |            b |
-| WORD         | 0              | 65535         | 16 bit        |            w |
-| DWORD        | 0              | 4294967295    | 32 bit        |           dw |
-| LWORD        | 0              | 2^64-1        | 64 bit        |           lw |
-| USINT        | 0              | 255           | 8 bit         |          usi |
-| UINT         | 0              | 65535         | 16 bit        |           ui |
-| UDINT        | 0              | 2^64-1        | 32 bit        |          udi |
-| ULINT        | 0              | 2^64-1        | 64 bit        |          uli |
+| BYTE         | 0              | 255           | 8 bit         | b             |
+| WORD         | 0              | 65535         | 16 bit        | w             |
+| DWORD        | 0              | 4294967295    | 32 bit        | dw            |
+| LWORD        | 0              | 2^64-1        | 64 bit        | lw            |
+| USINT        | 0              | 255           | 8 bit         | usi           |
+| UINT         | 0              | 65535         | 16 bit        | ui            |
+| UDINT        | 0              | 2^64-1        | 32 bit        | udi           |
+| ULINT        | 0              | 2^64-1        | 64 bit        | uli           |
 
 ### Signed Integer Data Types
 
@@ -72,11 +72,21 @@ These pseudo data types are converted to a platform-compliant data type by the c
 | XINT          | LINT          | DINT          | uxi           |
 | XWORD         | LWORD         | DWORD         | xw            |
 
+### Instances of Objects, and User-Defined Data Types:
+
+| Type | Description | Prefix |
+| FUNCTION_BLOCK | Instance of a function block | fb |
+| STRUCT         | Instance of a structure | st |
+| ENUM           | Instance of an enumeration | e | 
+| TYPE (Alias)   | Instnce of an alias type | Alias type | 
+| INTERFACE      | Instance of an interface | p |
+| UNION          | Instance of a union | u |
+
 ### Floating Point Data Types
 
 | Type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Minimum &nbsp; &nbsp; &nbsp; | Maximum &nbsp; &nbsp; &nbsp; | Memory &nbsp; &nbsp; &nbsp; &nbsp; | Prefix &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| REAL          | -3.40e+38     | 3.40e+38       | 32 bit        | r             |
+| REAL          | -3.40e+38     | 3.40e+38      | 32 bit        | r             |
 | LREAL         | -1.79e+308    | 1.79e+308     | 64 bit        | lr            |
 
 ## Naming Conventions for Types
