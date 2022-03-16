@@ -75,6 +75,8 @@ These pseudo data types are converted to a platform-compliant data type by the c
 ### Instances of Objects, and User-Defined Data Types:
 
 | Type | Description | Prefix |
+
+| ------------- | ------------- | ------------- |
 | FUNCTION_BLOCK | Instance of a function block | fb |
 | STRUCT         | Instance of a structure | st |
 | ENUM           | Instance of an enumeration | e | 
