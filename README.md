@@ -151,17 +151,19 @@ Because these functions are used frequently and their functionality is simple, t
 
 ## Tagging
 
-Tags are intended to start with the @ sybmol and be spelled using all capitals.  This is intended, in the codesys envirionment, to make them uniquely findable, as the @ symbol cannot be incorporated into POU, DUT, etc. names.
+Tags are intended to start with the @ sybmol and be spelled using all capitals.  This is intended, in the codesys environment, to make them uniquely findable, as the @ symbol cannot be incorporated into POU, DUT, etc. names.
 
 | Tag                | Description                                                               |
 | -------------     | ------------------------------------------------------------------------- |
-| ```TODO```        | Intended to note where a future action should be taken.                   |
+| ```@TODO```        | Intended to note where a future action should be taken.                   |
 | ```@FIXME```      | Intended to note where something needs to be fixed.                       |
 | ```@FUTURE```     | Intended to reserve a name, etc., for future use.                         |
 | ```@REFACTOR```   | Intended to note where a refactor is required.                            |
 | ```@DEPRECATE```  | Intended to describe a name, feature, etc. that is to be depricated.      |
 
-# Ownership
+### Ownership
+
+For tags that require ownership, the intended style is to use the tag followed by a period and an identifier for the owner.  For example, for a todo for yourself, user ```@TODO.JKN```, where for this example, JKN is the initials of the owner. As another example, ```@FIXME.KOM``` could be used by another developer to note a feature where the developer with the initials with KOM should focus future development effort.
 
 # Sources
 
