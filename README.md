@@ -79,8 +79,8 @@ These pseudo data types are converted to a platform-compliant data type by the c
 
 | Type | Description | Prefix | Interpretation |
 | ------------- | ------------- | ------------- | ------------- |
-| STRING | string | s | ASCII |
-| WSTRING | wide string | ws | Unicode |
+| STRING        | string        | s             | ASCII         |
+| WSTRING       | wide string   | ws            | Unicode       |
 
 For the STRING datatype, each character requires 1 byte,  and an additoinal string terminating byte.  For example, if a STRING(50) is declared, this will occupy 51 bytes of memory. Each STRING is automatically terminated with a null character.  
 
@@ -118,24 +118,24 @@ Constatns are to be named using a capitalized snake case, with the exception of 
 ## Legacy Naming
 
 | Type | Old | New |
-| --- | --- | --- |
-| BOOL | b | x |
-| BYTE | n | b |
-| DINT | n | di |
-| DWORD | n | dw |
-| INT | n | i |
-| LINT | n | li
-| LREAL | f | lr | 
-| LWORD | n | lw |
-| REAL | f | r |
-| UDINT | n | udi |
-| UINT | n | ui |
-| USINT | n | usi | 
-| ULINT | n | uli |
-| UXINT | n | uxi |
-| WORD | n | w |
-| XINT | n | xi |
-| XWORD | n | xw |
+| --------- | ---- | ---- |
+| BOOL      | b    | x    |
+| BYTE      | n    | b    |
+| DINT      | n    | di   |
+| DWORD     | n    | dw   |
+| INT       | n    | i    |
+| LINT      | n    | li   |
+| LREAL     | f    | lr   | 
+| LWORD     | n    | lw   |
+| REAL      | f    | r    |
+| UDINT     | n    | udi  |
+| UINT      | n    | ui   |
+| USINT     | n    | usi  | 
+| ULINT     | n    | uli  |
+| UXINT     | n    | uxi  |
+| WORD      | n    | w    |
+| XINT      | n    | xi   |
+| XWORD     | n    | xw   |
  
 ## Special Function Types
 
@@ -145,8 +145,23 @@ Because these functions are used frequently and their functionality is simple, t
 | ------------- | ------------- | 
 | R_TRIG        | rt            |
 | F_TRIG        | ft            | 
+| E_TRIG        | et            |
 | TON           | ton           | 
 | TOFF          | tof           |
+
+## Tagging
+
+Tags are intended to start with the @ sybmol and be spelled using all capitals.  This is intended, in the codesys envirionment, to make them uniquely findable, as the @ symbol cannot be incorporated into POU, DUT, etc. names.
+
+| Tag           | Description                                                               |
+| ------------- | ------------------------------------------------------------------------- |
+| '@TODO'       | Intended to note where a future action should be taken.                   |
+| '@FIXME'      | Intended to note where something needs to be fixed.                       |
+| '@FUTURE'     | Intended to reserve a name, etc., for future use.                         |
+| '@REFACTOR'   | Intended to note where a refactor is required.                            |
+| '@DEPRECATE'  | Intended to describe a name, feature, etc. that is to be depricated.      |
+
+# Ownership
 
 # Sources
 
