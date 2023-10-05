@@ -155,7 +155,7 @@ Tags are intended to start with the @ sybmol and be spelled using all capitals. 
 
 | Tag           | Description                                                               |
 | ------------- | ------------------------------------------------------------------------- |
-| '@TODO'       | Intended to note where a future action should be taken.                   |
+| '''@TODO'''   | Intended to note where a future action should be taken.                   |
 | '@FIXME'      | Intended to note where something needs to be fixed.                       |
 | '@FUTURE'     | Intended to reserve a name, etc., for future use.                         |
 | '@REFACTOR'   | Intended to note where a refactor is required.                            |
