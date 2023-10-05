@@ -153,13 +153,13 @@ Because these functions are used frequently and their functionality is simple, t
 
 Tags are intended to start with the @ sybmol and be spelled using all capitals.  This is intended, in the codesys envirionment, to make them uniquely findable, as the @ symbol cannot be incorporated into POU, DUT, etc. names.
 
-| Tag           | Description                                                               |
-| ------------- | ------------------------------------------------------------------------- |
-| '''@TODO'''   | Intended to note where a future action should be taken.                   |
-| '@FIXME'      | Intended to note where something needs to be fixed.                       |
-| '@FUTURE'     | Intended to reserve a name, etc., for future use.                         |
-| '@REFACTOR'   | Intended to note where a refactor is required.                            |
-| '@DEPRECATE'  | Intended to describe a name, feature, etc. that is to be depricated.      |
+| Tag                | Description                                                               |
+| -------------     | ------------------------------------------------------------------------- |
+| ```TODO```        | Intended to note where a future action should be taken.                   |
+| ```@FIXME```      | Intended to note where something needs to be fixed.                       |
+| ```@FUTURE```     | Intended to reserve a name, etc., for future use.                         |
+| ```@REFACTOR```   | Intended to note where a refactor is required.                            |
+| ```@DEPRECATE```  | Intended to describe a name, feature, etc. that is to be depricated.      |
 
 # Ownership
 
