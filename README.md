@@ -167,7 +167,9 @@ For tags that require ownership, the intended style is to use the tag followed b
 
 ## .gitignore
 
-Please see Github's [.gitignore](https://github.com/github/gitignore/blob/main/TwinCAT3.gitignore).  
+### TwinCAT
+
+See Github's TwinCAT [.gitignore](https://github.com/github/gitignore/blob/main/TwinCAT3.gitignore) file.  
 
 # Sources
 
