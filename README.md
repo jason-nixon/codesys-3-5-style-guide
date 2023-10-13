@@ -165,6 +165,10 @@ Tags are intended to start with the @ sybmol and be spelled using all capitals. 
 
 For tags that require ownership, the intended style is to use the tag followed by a period and an identifier for the owner.  For example, for a todo for yourself, user ```@TODO.JKN```, where for this example, JKN is the initials of the owner. As another example, ```@FIXME.KOM``` could be used by another developer to note a feature where the developer with the initials with KOM should focus future development effort.
 
+## .gitignore
+
+Please see Github's [.gitignore](https://github.com/github/gitignore/blob/main/TwinCAT3.gitignore).  
+
 # Sources
 
 [Beckhoff TwinCAT naming guide](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/3146718603.html)
